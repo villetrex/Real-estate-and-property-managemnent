@@ -33,20 +33,8 @@ I have been involved in real estate in different capacities for over 10 years, a
 ![](./Mockups_Mobile_Home_Dashboard.png)
 ![](./Mockups_Mobile_Listings_Rentals.png)
 
-## Libraries & APIs
-### Current Version
-* FileStack for photo storage and linking to app
-* Perk framework including Knex, React, Backbone, Underscore, Gulp
-* PostgreSQL & Express
 
-### Potential Future APIs
-* Neighborhood information, housing market data, crime statistics, school info, property location
 
-## Additional Project Information/Links
-* [Link to launched app](http://home-finder-lite.herokuapp.com/)
-* [Trello User Stories](https://trello.com/b/R882AM3Y/real-estate-website)
-
-## Contact Dan 
 * [Dan's Portfolio](http://danbuda.com/#/?_k=w19b90)
 * [Dan's LinkedIn](https://www.linkedin.com/in/danbuda)
 * [Dan's Twitter](https://twitter.com/danielbuda)
