@@ -1,0 +1,1067 @@
+// import color variables & other styles
+@import 'variables';
+@import 'node_modules/normalize.css/normalize';
+@import 'node_modules/rayon/src/styles/rayon';
+@import 'node_modules/rayon/src/styles/theme';
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+.rayon {
+	border-radius: 0.5em;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#content {
+	padding-bottom: 5em;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: $backBlue;
+}
+
+a:visited {
+	color: $backBlue;
+}
+
+li {
+	list-style: none;
+}
+
+.navBar {
+	background-color: $slateGrey;
+	width: 100%;
+	overflow: hidden;
+	padding: 0.6em 0;
+
+	.hamburger {
+		float: right;
+		line-height: 4em;
+		margin-right: 1em;
+		text-align: right;
+
+		.fa-bars {
+			cursor: pointer;
+			vertical-align: middle;
+			color: #FFF;
+		}
+
+		.mobile-menu {
+			display: none;
+
+			.mobileLinkNavDiv {
+
+				.mobileNavLink {
+					color: $buttonBlue;
+					float: right;
+				}
+			}
+		}
+	}
+
+	.logoDiv {
+		float: left;
+
+		a:visited {
+			color: #FFF;
+		}
+
+		.homeFinderLogo {
+			float: left;
+			height: 4em;
+		}
+
+		.homeFinderName {
+			float: right;
+			font-weight: lighter;
+			display: none;
+		}
+
+		.navLeft {
+			margin-left: 1em;
+		}
+	}
+
+	.navLinks {
+		float: right;
+		line-height: 4em;
+		margin-right: 1em;
+		display: none;
+
+		span {
+			margin-right: 0.3em;
+		}
+
+		.leftNavItem {
+			margin-left: 2em;
+			color: #FFF;
+		}
+
+		.navLink {
+
+		}
+
+		.divider {
+			margin: 0 0.3em;
+			color: #FFF;
+		}
+	}
+}
+
+.regFormDiv {
+	padding: 1em;
+	
+		span {
+			color: #000;
+			font-size: 1em;
+			display: block;
+		}
+
+		input {
+			width: 95%;
+			margin-bottom: 1em;
+		}
+
+		textarea {
+			width: 95%;
+			margin-bottom: 1em;
+		}
+
+		button {
+			padding: 1em;
+			width: 100%;
+			color: #fff;
+			background-color: $buttonBlue;;
+			margin: 0.1em auto;
+			text-align: center;
+			border-radius: 0.3em;
+			cursor: pointer;
+			border: none;
+			max-width: 12em;
+			display: block;
+		}
+}
+
+.loginFormDiv {
+	padding: 1em;
+	text-align: center;
+
+	input {
+		width: 95%;
+		margin-bottom: 1em;
+	}
+
+	button {
+		padding: 1em;
+		width: 100%;
+		color: #fff;
+		background-color: $buttonBlue;;
+		margin: 0.1em auto;
+		text-align: center;
+		border-radius: 0.3em;
+		cursor: pointer;
+		border: none;
+		max-width: 12em;
+		display: block;
+	}
+}
+
+.regPhotoDiv {
+	padding-bottom: 1em;
+}
+
+.loginCancelDiv {
+	padding-bottom: 1em;
+
+	.loginCancelButton {
+		padding: 1em;
+		width: 100%;
+		color: #fff;
+		background-color: $buttonBlue;;
+		margin: 0.1em auto;
+		text-align: center;
+		border-radius: 0.3em;
+		cursor: pointer;
+		border: none;
+		max-width: 12em;
+		display: block;
+	}
+}
+
+.otherRegButton {
+	padding: 1em;
+	width: 100%;
+	color: #fff;
+	background-color: $buttonBlue;;
+	margin: 0 auto 1em auto;
+	text-align: center;
+	border-radius: 0.3em;
+	cursor: pointer;
+	border: none;
+	max-width: 12em;
+	display: block;
+}
+
+.agentDetailsBlock {
+	padding: 1.2em;
+	background-color: #fff;
+	margin: 1em;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+	
+	li {
+		margin-bottom: 1em;
+		font-size: 1.2em;
+	}
+
+	.detailsList {
+		padding: 0;
+	}
+}
+.rayon-parent {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: scroll;
+	z-index: 11;
+}
+
+.pageDiv {
+	padding-top: 1em;
+}
+
+.breadCrumbs {
+	margin-right: 0.5em;
+}
+
+.crumbOne {
+	margin-left: 1em;
+}
+
+.loginForm {
+
+}
+
+.homeContainer {
+	width: 100%;
+	background-image: url(./../images/bgPhoto.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-position: bottom;
+
+	.welcomeBox {
+
+		.homeFinderNameMobile {
+			color: #fff;
+			padding: 0.6em 0;
+			text-align: center;
+			font-size: 26px;
+		}
+
+		.welcome {
+			color: #FFF;
+			text-align: center;
+			font-size: 20px;
+			padding-bottom: 0.4em;
+		}
+	}
+
+	.homeBoxes {
+		width: 50%;
+		margin: 0 auto 18em auto;
+		padding: 1.7em;
+		background: rgba(255,255,255,0.4);
+    	box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+    	overflow: hidden;
+   		border-radius: 0.3em;
+   		margin-top: 2em;
+   		max-width: 12em;
+
+		.homeBoxLink {
+			color: #fff;
+			background-color: $buttonBlue;;
+			margin: 0.3em auto;
+			padding: 0.7em;
+			text-align: center;
+			border-radius: 0.3em;
+			cursor: pointer;
+			border: none;
+			width: 100%;
+		}
+	}
+	
+}
+
+.listingPage {
+	background-color: $lGrey;
+	overflow: hidden;
+	width: 100%;
+
+	.grid {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.detailsPhotoBox {
+		margin-bottom: 1em;
+		max-width:25em;
+
+		.detailsPhoto {
+			margin: 0 auto;
+			width: 80%;
+			display: block;
+			box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+		}
+	}
+	
+	.morePhotos {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		max-width:25em;
+
+		.morePhotosLink {
+			font-size: 1.3em;
+		}
+	}
+}
+
+.fa-angle-right {
+	margin-right: 0.5em;
+}
+
+.dashboardDiv {
+	background-color: $lGrey;
+}
+
+.propThumb {
+	width: 90%;
+	background-color: #FFF;
+	margin: 1em auto;
+	padding: 1%;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+	cursor: pointer;
+
+	.thumbImg {
+		width: 100%;
+		display: block;
+	}
+
+	.thumbInfo {
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0.3em 0;
+
+			li {
+				margin: 0.5em 0;
+				font-size: 1.2em;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.agentPhone{
+				min-height: 1.3rem;
+			}
+
+			.propThumbAddress {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.rentColor {
+				color: $orange;
+			}
+
+			.saleColor {
+				color: $buttonBlue;
+			}
+		}
+	}
+}
+
+.propThumb:hover {
+	background-color: #ccc;
+}
+
+.propEntryForm {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 35em;
+
+	.photoButtonDiv {
+		padding: 0 1em;
+
+		.photoButton {
+			padding: 0.5em;
+			width: 100%;
+			color: #fff;
+			background-color: $buttonBlue;;
+			margin: 0.1em auto;
+			text-align: center;
+			border-radius: 0.3em;
+			cursor: pointer;
+			border: none;
+			max-width: 12em;
+			display: block;
+		}
+	}
+
+	form {
+		padding-top: 1em;
+
+		.propFormButtons {
+			width:100%;
+
+			input {
+				width: 100%;
+				color: #fff;
+				background-color: $buttonBlue;;
+				margin: 0.7em auto;
+				padding: 0.5em;
+				text-align: center;
+				border-radius: 0.3em;
+				cursor: pointer;
+				border: none;
+				max-width: 12em;
+				display: block;
+			}
+		}
+
+		.entryButtonDiv {
+			width:100%;
+
+			input {
+				width:100%;
+				color: #fff;
+				background-color: $buttonBlue;;
+				margin: 0.7em auto;
+				display: block;
+				padding: 0.5em;
+				text-align: center;
+				border-radius: 0.3em;
+				cursor: pointer;
+				border: none;
+				max-width: 12em;
+			}
+		}
+
+	.propFormInput {
+		width: 100%;
+
+		.inputLineSale {
+			width:100%;
+			margin-bottom: 1em;
+
+			span {
+				font-size: 1em;
+				display: block;
+			}
+
+			input {
+				width:100%;
+				max-width:100%;
+			}
+
+			select {
+				width:100%;
+				max-width:100%;
+			}
+		}
+
+		.inputLineType {
+			width:100%;
+			margin-bottom: 1em;
+
+			span {
+				font-size: 1em;
+				display: block;
+			}
+
+			input {
+				width:100%;
+				max-width:100%;
+			}
+
+			select {
+				width:100%;
+				max-width:100%;
+			}
+		}
+
+		.inputLine {
+			width: 100%;
+			margin-bottom: 1em;
+
+			span {
+				font-size: 1em;
+				display: block;
+			}
+
+			input {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			select {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			.propTextarea {
+				width: 100%;
+				max-width: 100%;
+			}	
+	}
+
+	.propFormButtons {
+		
+	}
+
+	.priceBedBath {
+
+			.inputPrice {
+				width:100%;
+				margin-bottom: 1em;
+
+				span {
+					font-size: 1em;
+					display: block;
+				}
+
+				input {
+					width:100%;
+					max-width:100%;
+				}
+			}
+
+			.inputBed {
+				width:100%;
+				margin-bottom: 1em;
+
+				span {
+					font-size: 1em;
+					display: block;
+				}
+
+				input {
+					width:100%;
+					max-width:100%;
+				}
+			}
+
+			.inputBath {
+				width:100%;
+				margin-bottom: 1em;
+
+				span {
+					font-size: 1em;
+					display: block;
+				}
+
+				input {
+					width:100%;
+					max-width:100%;
+				}
+			}
+		}
+
+		.entryLastRow {
+
+			.inputSqft {
+				width:100%;
+				margin-bottom: 1em;
+
+				span {
+					font-size: 1em;
+					display: block;
+				}
+
+				input {
+					width:100%;
+					max-width:100%;
+				}
+			}
+
+			.inputAcres {
+				width:100%;
+				margin-bottom: 1em;
+
+				span {
+					font-size: 1em;
+					display: block;
+				}
+
+				input {
+					width:100%;
+					max-width:100%;
+				}
+			}
+
+			.inputStories {
+				width:100%;
+				margin-bottom: 1em;
+
+				span {
+					font-size: 1em;
+					display: block;
+				}
+
+				input {
+					width:100%;
+					max-width:100%;
+				}
+			}
+
+			.inputYear {
+				width:100%;
+				margin-bottom: 1em;
+
+				span {
+					font-size: 1em;
+					display: block;
+				}
+
+				input {
+					width:100%;
+					max-width:100%;
+				}
+			}
+		}
+	}
+}
+}
+
+.propDetailsBlock {
+	background-color: #fff;
+	margin: 1em;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+}
+
+.detailsList {
+	padding: 1.2em;
+
+	li {
+		margin-bottom: 1em;
+		font-size: 1.2em;
+	}
+}
+
+.filterButtons {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1em;
+
+		.filterButton {
+			color: #fff;
+			background-color: $buttonBlue;;
+			margin: 0.1em;
+			padding: 0.5em;
+			text-align: center;
+			border-radius: 0.3em;
+			cursor: pointer;
+			border: none;
+		}
+	}
+
+.bigPhotoBox {
+	width: 100%;
+	margin-bottom: 1em;
+
+	.bigPhoto {
+		width: 100%;
+	}
+}
+
+.propEntryDiv {
+	width: 100%;
+}
+
+.footer {
+	background-color: $slateGrey;
+	color: #FFF;
+	height: 5em;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+
+	.footerText {
+		text-align: center;
+		font-weight: lighter;
+		padding: 1em 0;
+		margin: 0;
+		line-height: 3em;
+	}
+}
+
+.editDropdownDiv {
+	width:90%;
+	padding: 1em 0;
+	margin: 0 auto;
+	max-width: 35em;
+
+	.editDropdown {
+		width:100%;
+		max-width: 100%;
+	}
+}
+
+.socialButtons {
+	margin-bottom: 1em;
+	text-align: center;
+
+	.socialButton {
+		margin: 0 0.8em;
+	}
+}
+
+.signOut {
+	cursor: pointer;
+}
+
+.rayon-spacer {
+	padding: 5em 1em;
+}
+
+.delConfirmBox {
+	padding: 0.5em;
+
+	p {
+
+	}
+
+	button {
+		width:100%;
+		color: #fff;
+		background-color: $buttonBlue;;
+		margin: 0.1em;
+		padding: 0.5em;
+		text-align: center;
+		border-radius: 0.3em;
+		cursor: pointer;
+		border: none;
+	}
+
+	.finalDelete {
+		background-color: red;
+	}
+}
+
+.editProfileForm {
+	padding: 1em;
+
+	span {
+		font-size: 1em;
+		display: block;
+	}
+
+	input {
+		width: 95%;
+		margin-bottom: 1em;
+	}
+
+	textarea {
+		width: 95%;
+		margin-bottom: 1em;
+	}
+
+	.updateButtonDiv {
+		width:100%;
+
+		button {
+			width:100%;
+			color: #fff;
+			background-color: $buttonBlue;;
+			margin: 0.1em auto;
+			padding: 0.5em;
+			text-align: center;
+			border-radius: 0.3em;
+			cursor: pointer;
+			border: none;
+			max-width: 12em;
+			display: block;
+		}
+	}
+}
+
+.updateCancelDiv {
+	width: 93%;
+	padding: 0.4em 0.5em;
+	margin: 0 auto;
+
+	button {
+		width:100%;
+		color: #fff;
+		background-color: $buttonBlue;;
+		margin: 0.1em auto;
+		padding: 0.5em;
+		text-align: center;
+		border-radius: 0.3em;
+		cursor: pointer;
+		border: none;
+		max-width: 12em;
+		display: block;
+	}
+}
+
+.dashboardButtons {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 14em;
+
+	.dashboardButton {
+		width:75%;
+		color: #fff;
+		background-color: $buttonBlue;;
+		margin: 1em 0;
+		padding: 0.5em;
+		text-align: center;
+		border-radius: 0.3em;
+		cursor: pointer;
+		border: none;
+		max-width: 12em;
+	}
+}
+
+// Responsive design style changes start here
+@media (min-width: 350px) {
+	.dashboardButtons {
+		padding-bottom: 14em;
+	}
+
+	.homeContainer {
+
+		.homeBoxes {
+			width: 45%;
+			margin: 0 auto 18em auto;
+			padding: 1.7em;
+			background: rgba(255,255,255,0.4);
+	    	box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+	    	overflow: hidden;
+	   		border-radius: 0.3em;
+	   		margin-top: 2em;
+		}
+	}
+}
+
+@media (min-width: 480px) {
+	.propEntryForm {
+
+		form {
+
+			.propFormInput {
+
+				.inputLineSale {
+					float: left;
+					width: 48%;
+					margin-bottom: 1em;
+				}
+
+				.inputLineType {
+					float: right;
+					width: 48%;
+					margin-bottom: 1em;
+				}
+
+				.priceBedBath {
+
+					.inputPrice {
+						float: left;
+						width: 30%;
+						margin-bottom: 1em;
+					}
+
+					.inputBed {
+						float: left;
+						width: 30%;
+						margin-bottom: 1em;
+						margin-left:5%;
+					}
+
+					.inputBath {
+						float: right;
+						width: 30%;
+						margin-bottom: 1em;
+					}
+				}
+
+				.entryLastRow {
+
+					.inputSqft {
+						width: 22%;
+						float: left;
+					}
+
+					.inputAcres {
+						width: 22%;
+						float: left;
+						margin-left: 4%;
+					}
+
+					.inputStories {
+						width: 22%;
+						float: left;
+						margin-left: 4%;
+					}
+
+					.inputYear {
+						width: 22%;
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 504px) {
+
+	.navBar {
+
+		.logoDiv {
+
+		}
+
+		.hamburger {
+			display: none;
+		}
+
+		.navLinks {
+			display: block;
+		}
+	}
+
+	.homeContainer {
+
+		.homeBoxes {
+			width:35%;
+		}
+	}
+	.propThumb {
+		width: 45%;
+		margin: 2%;
+		display: inline-block;
+	}
+
+	.detailsPhotoBox {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.bigPhotoBox {
+
+		.bigPhoto {
+			width: 46%;
+			margin: 2%;
+			float: left;
+			box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+		}
+	}
+}
+
+@media (min-width: 670px) {
+
+	.navBar {
+
+		.logoDiv {
+
+			.homeFinderName {
+				display: block;
+			}
+		}
+	}
+
+	.homeContainer {
+
+		.welcomeBox {
+
+			.welcome {
+				padding-top: 1em;
+			}
+
+			.homeFinderNameMobile {
+				display: none;
+			}
+		}
+	}
+
+	.propThumb {
+		width: 29%;
+	}
+
+	.bigPhotoBox {
+
+		.bigPhoto {
+			width: 30%;
+			margin: 1.66%;
+			float: left;
+		}
+	}
+}
+
+// Responsive design styles changes end here
+
+// Following media queries are fixes for the home background image sizing
+// and screen location
+@media (min-width: 800px) {
+
+	.homeContainer {
+		background-position: 0 -100px;
+	}
+}
+
+@media (min-width: 925px) {
+	.homeContainer {
+		background-position: 0 -150px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.homeContainer {
+		background-position: 0 -200px;
+	}
+}
+
+@media (min-width: 1075px) {
+	.homeContainer {
+		background-position: 0 -250px;
+	}
+}
+
+@media (min-width: 1150px) {
+	.homeContainer {
+		background-position: 0 -300px;
+	}
+}
+
+@media (min-width: 1225px) {
+	.homeContainer {
+		background-position: 0 -350px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.homeContainer {
+		background-position: 0 -400px;
+	}
+}
