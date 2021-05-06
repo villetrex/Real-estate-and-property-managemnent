@@ -33,9 +33,3 @@ I have been involved in real estate in different capacities for over 10 years, a
 ![](./Mockups_Mobile_Home_Dashboard.png)
 ![](./Mockups_Mobile_Listings_Rentals.png)
 
-
-
-* [Dan's Portfolio](http://danbuda.com/#/?_k=w19b90)
-* [Dan's LinkedIn](https://www.linkedin.com/in/danbuda)
-* [Dan's Twitter](https://twitter.com/danielbuda)
-* [Dan on CodePen](http://codepen.io/danbuda/)
